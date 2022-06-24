@@ -1,0 +1,25 @@
+
+<div class="container">
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">A. Paterno</th>
+                <th scope="col">A. Materno</th>
+                <th scope="col">Activo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let persona of personasList">
+                <th scope="row">{{ persona.id}}</th>
+                <td>{{ persona.nombre }}</td>
+                <td>{{ persona.aPaterno }}</td>
+                <td>{{ persona.aMaterno }}</td>
+                <td>{{ persona.activo }}</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</div>
